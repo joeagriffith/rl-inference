@@ -24,21 +24,25 @@ class Buffer(object):
         self.device = device
 
         self.states = np.zeros((buffer_size, state_size))
+        self.next_states = np.zeros((buffer_size, state_size))
         self.actions = np.zeros((buffer_size, action_size))
         self.rewards = np.zeros((buffer_size, 1))
         self.state_deltas = np.zeros((buffer_size, state_size))
+        self.dones = np.zeros((buffer_size, 1))
 
         self.normalizer = normalizer
         self._total_steps = 0
 
-    def add(self, state, action, reward, next_state):
+    def add(self, state, action, reward, next_state, done):
         idx = self._total_steps % self.buffer_size
         state_delta = next_state - state
 
         self.states[idx] = state
+        self.next_states[idx] = next_state
         self.actions[idx] = action
         self.rewards[idx] = reward
         self.state_deltas[idx] = state_delta
+        self.dones[idx] = done
         self._total_steps += 1
 
         self.normalizer.update(state, action, state_delta)
@@ -62,26 +66,31 @@ class Buffer(object):
             batch_indices = batch_indices.flatten()
 
             states = self.states[batch_indices]
+            next_states = self.next_states[batch_indices]
             actions = self.actions[batch_indices]
             rewards = self.rewards[batch_indices]
             state_deltas = self.state_deltas[batch_indices]
+            dones = self.dones[batch_indices]
 
             states = torch.from_numpy(states).float().to(self.device)
+            next_states = torch.from_numpy(next_states).float().to(self.device)
             actions = torch.from_numpy(actions).float().to(self.device)
             rewards = torch.from_numpy(rewards).float().to(self.device)
             state_deltas = torch.from_numpy(state_deltas).float().to(self.device)
+            dones = torch.from_numpy(dones).float().to(self.device)
 
             if self.signal_noise is not None:
                 states = states + self.signal_noise * torch.randn_like(states)
+                # next_states = next_states + self.signal_noise * torch.randn_like(next_states)
 
             states = states.reshape(self.ensemble_size, batch_size, self.state_size)
+            next_states = next_states.reshape(self.ensemble_size, batch_size, self.state_size)
             actions = actions.reshape(self.ensemble_size, batch_size, self.action_size)
             rewards = rewards.reshape(self.ensemble_size, batch_size, 1)
-            state_deltas = state_deltas.reshape(
-                self.ensemble_size, batch_size, self.state_size
-            )
+            state_deltas = state_deltas.reshape(self.ensemble_size, batch_size, self.state_size)
+            dones = dones.reshape(self.ensemble_size, batch_size, 1)
 
-            yield states, actions, rewards, state_deltas
+            yield states, next_states, actions, rewards, state_deltas, dones
 
     def __len__(self):
         return min(self._total_steps, self.buffer_size)

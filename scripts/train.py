@@ -53,7 +53,7 @@ def main(args):
         normalizer,
         device=DEVICE,
     )
-    reward_model = RewardModel(state_size + action_size, args.hidden_size, device=DEVICE)
+    reward_model = RewardModel(state_size, args.hidden_size, device=DEVICE)
     trainer = Trainer(
         ensemble,
         reward_model,
@@ -100,7 +100,7 @@ def main(args):
         logger.log_losses(ensemble_loss, reward_loss)
 
         recorder = None
-        if args.record_every is not None and args.record_every % episode == 0:
+        if args.record_every is not None and episode % args.record_every == 0:
             filename = logger.get_video_path(episode)
             recorder = VideoRecorder(env.unwrapped, path=filename)
             logger.log("Setup recoder @ {}".format(filename))

@@ -2,6 +2,7 @@
 # pylint: disable=no-member
 
 import torch
+from pmbrl.utils.functional import cosine_schedule
 
 
 class Trainer(object):
@@ -31,6 +32,9 @@ class Trainer(object):
         self.optim = torch.optim.Adam(self.params, lr=learning_rate, eps=epsilon)
 
     def train(self):
+        target_reward_model = self.reward_model.copy()
+        taus = cosine_schedule(0.996, 1.0, self.n_train_epochs)
+
         e_losses = []
         r_losses = []
         n_batches = []
@@ -39,7 +43,7 @@ class Trainer(object):
             r_losses.append([])
             n_batches.append(0)
 
-            for (states, actions, rewards, deltas) in self.buffer.get_train_batches(
+            for (states, next_states, actions, rewards, deltas, dones) in self.buffer.get_train_batches(
                 self.batch_size
             ):
                 self.ensemble.train()
@@ -47,7 +51,7 @@ class Trainer(object):
 
                 self.optim.zero_grad()
                 e_loss = self.ensemble.loss(states, actions, deltas)
-                r_loss = self.reward_model.loss(states, actions, rewards)
+                r_loss = self.reward_model.loss(target_reward_model, states, next_states, rewards, dones)
                 (e_loss + r_loss).backward()
                 torch.nn.utils.clip_grad_norm_(
                     self.params, self.grad_clip_norm, norm_type=2
@@ -57,6 +61,11 @@ class Trainer(object):
                 e_losses[epoch - 1].append(e_loss.item())
                 r_losses[epoch - 1].append(r_loss.item())
                 n_batches[epoch - 1] += 1
+            
+                # Update target reward model
+                with torch.no_grad():
+                    for param, target_param in zip(self.reward_model.parameters(), target_reward_model.parameters()):
+                        target_param.data = taus[epoch - 1] * target_param.data + (1 - taus[epoch - 1]) * param.data
 
             if self.logger is not None and epoch % 20 == 0:
                 avg_e_loss = self._get_avg_loss(e_losses, n_batches, epoch)

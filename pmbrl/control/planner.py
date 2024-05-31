@@ -87,7 +87,7 @@ class Planner(nn.Module):
                 _states = states.view(-1, state_size)
                 _actions = actions.unsqueeze(0).repeat(self.ensemble_size, 1, 1, 1)
                 _actions = _actions.view(-1, self.action_size)
-                rewards = self.reward_model(_states, _actions)
+                rewards = self.reward_model(_states)
                 rewards = rewards * self.reward_scale
                 rewards = rewards.view(
                     self.plan_horizon, self.ensemble_size, self.n_candidates

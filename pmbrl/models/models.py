@@ -146,28 +146,35 @@ class EnsembleModel(nn.Module):
 
 
 class RewardModel(nn.Module):
-    def __init__(self, in_size, hidden_size, act_fn="relu", device="cpu"):
+    def __init__(self, in_size, hidden_size, gamma=0.99, act_fn="relu", device="cpu"):
         super().__init__()
         self.in_size = in_size
         self.hidden_size = hidden_size
         self.device = device
         self.act_fn = getattr(F, act_fn)
+        self.gamma = gamma
         self.reset_parameters()
         self.to(device)
 
-    def forward(self, states, actions):
-        inp = torch.cat((states, actions), dim=-1)
+    def forward(self, states):
+        inp = states
         reward = self.act_fn(self.fc_1(inp))
         reward = self.act_fn(self.fc_2(reward))
         reward = self.fc_3(reward).squeeze(dim=1)
         return reward
 
-    def loss(self, states, actions, rewards):
-        r_hat = self(states, actions)
-        return F.mse_loss(r_hat, rewards)
+    def loss(self, target_model, states, next_states, rewards, dones):
+        targets = rewards + self.gamma * target_model(next_states) * (1 - dones)
+        r_hat = self(states)
+        return F.mse_loss(r_hat, targets)
 
     def reset_parameters(self):
         self.fc_1 = nn.Linear(self.in_size, self.hidden_size)
         self.fc_2 = nn.Linear(self.hidden_size, self.hidden_size)
         self.fc_3 = nn.Linear(self.hidden_size, 1)
         self.to(self.device)
+    
+    def copy(self):
+        new_model = RewardModel(self.in_size, self.hidden_size, self.gamma, device=self.device)
+        new_model.load_state_dict(self.state_dict())
+        return new_model
