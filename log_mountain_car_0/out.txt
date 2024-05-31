@@ -1,0 +1,1018 @@
+16:27:03
+
+=== Loading experiment [device: cuda] ===
+
+{'action_noise': None,
+ 'action_repeat': 3,
+ 'batch_size': 50,
+ 'coverage': False,
+ 'ensemble_size': 25,
+ 'env_name': 'SparseMountainCar',
+ 'epsilon': 1e-08,
+ 'expl_scale': 1.0,
+ 'expl_strategy': 'information',
+ 'grad_clip_norm': 1000,
+ 'hidden_size': 200,
+ 'learning_rate': 0.001,
+ 'logdir': 'mountain_car0',
+ 'max_episode_len': 500,
+ 'n_candidates': 500,
+ 'n_episodes': 50,
+ 'n_seed_episodes': 1,
+ 'n_train_epochs': 100,
+ 'optimisation_iters': 5,
+ 'plan_horizon': 30,
+ 'record_every': None,
+ 'reward_scale': 1.0,
+ 'seed': 0,
+ 'strategy': 'information',
+ 'top_candidates': 50,
+ 'use_exploration': True,
+ 'use_mean': False,
+ 'use_reward': True}
+
+Collected seeds: [1 episodes | 167 frames]
+
+=== Episode 1 ===
+Training on [167/501] data points
+> Train epoch 20 [ensemble -12.79 | reward 0.00]
+> Train epoch 40 [ensemble -40.64 | reward 0.00]
+> Train epoch 60 [ensemble -52.37 | reward 0.00]
+> Train epoch 80 [ensemble -62.57 | reward 0.00]
+> Train epoch 100 [ensemble -70.90 | reward 0.00]
+Ensemble loss -70.90 / Reward Loss 0.00
+
+=== Collecting data [1] ===
+Rewards 1.00 / Steps 23.00
+Reward stats:
+ {'max': '0.55', 'mean': '0.06', 'min': '-0.27', 'std': '0.08'}
+Information gain stats:
+ {'max': '127.41', 'mean': '54.38', 'min': '11.36', 'std': '30.34'}
+Episode time 5.99
+Saved _metrics_
+
+=== Episode 2 ===
+Training on [190/570] data points
+> Train epoch 20 [ensemble 2.40 | reward 0.00]
+> Train epoch 40 [ensemble -27.84 | reward 0.00]
+> Train epoch 60 [ensemble -42.27 | reward 0.00]
+> Train epoch 80 [ensemble -52.56 | reward 0.00]
+> Train epoch 100 [ensemble -59.95 | reward 0.00]
+Ensemble loss -59.95 / Reward Loss 0.00
+
+=== Collecting data [2] ===
+> Step 25 [reward 0.00]
+Rewards 1.00 / Steps 35.00
+Reward stats:
+ {'max': '68.09', 'mean': '4.56', 'min': '-0.29', 'std': '6.80'}
+Information gain stats:
+ {'max': '106.90', 'mean': '51.46', 'min': '10.24', 'std': '16.52'}
+Episode time 6.94
+Saved _metrics_
+
+=== Episode 3 ===
+Training on [225/675] data points
+> Train epoch 20 [ensemble 5.83 | reward 0.01]
+> Train epoch 40 [ensemble -23.37 | reward 0.00]
+> Train epoch 60 [ensemble -36.08 | reward 0.00]
+> Train epoch 80 [ensemble -44.02 | reward 0.00]
+> Train epoch 100 [ensemble -49.79 | reward 0.00]
+Ensemble loss -49.79 / Reward Loss 0.00
+
+=== Collecting data [3] ===
+> Step 25 [reward 0.00]
+Rewards 1.00 / Steps 26.00
+Reward stats:
+ {'max': '474.60', 'mean': '31.72', 'min': '-0.19', 'std': '64.60'}
+Information gain stats:
+ {'max': '91.32', 'mean': '41.65', 'min': '18.57', 'std': '14.24'}
+Episode time 5.61
+Saved _metrics_
+
+=== Episode 4 ===
+Training on [251/753] data points
+> Train epoch 20 [ensemble -3.52 | reward 0.01]
+> Train epoch 40 [ensemble -29.45 | reward 0.00]
+> Train epoch 60 [ensemble -41.14 | reward 0.00]
+> Train epoch 80 [ensemble -48.36 | reward 0.00]
+> Train epoch 100 [ensemble -54.61 | reward 0.00]
+Ensemble loss -54.61 / Reward Loss 0.00
+
+=== Collecting data [4] ===
+Rewards 1.00 / Steps 24.00
+Reward stats:
+ {'max': '2211.80', 'mean': '316.17', 'min': '-0.20', 'std': '521.07'}
+Information gain stats:
+ {'max': '142.51', 'mean': '59.54', 'min': '12.46', 'std': '32.01'}
+Episode time 5.40
+Saved _metrics_
+
+=== Episode 5 ===
+Training on [275/825] data points
+> Train epoch 20 [ensemble -2.43 | reward 0.01]
+> Train epoch 40 [ensemble -28.84 | reward 0.00]
+> Train epoch 60 [ensemble -40.53 | reward 0.00]
+> Train epoch 80 [ensemble -47.81 | reward 0.00]
+> Train epoch 100 [ensemble -53.72 | reward 0.00]
+Ensemble loss -53.72 / Reward Loss 0.00
+
+=== Collecting data [5] ===
+Rewards 1.00 / Steps 24.00
+Reward stats:
+ {'max': '3936.41', 'mean': '572.01', 'min': '-0.12', 'std': '921.76'}
+Information gain stats:
+ {'max': '156.15', 'mean': '63.83', 'min': '15.41', 'std': '35.14'}
+Episode time 5.42
+Saved _metrics_
+
+=== Episode 6 ===
+Training on [299/897] data points
+> Train epoch 20 [ensemble -2.68 | reward 0.01]
+> Train epoch 40 [ensemble -29.10 | reward 0.01]
+> Train epoch 60 [ensemble -40.75 | reward 0.01]
+> Train epoch 80 [ensemble -47.99 | reward 0.00]
+> Train epoch 100 [ensemble -53.82 | reward 0.00]
+Ensemble loss -53.82 / Reward Loss 0.00
+
+=== Collecting data [6] ===
+> Step 25 [reward 1.00]
+Rewards 1.00 / Steps 25.00
+Reward stats:
+ {'max': '6511.42', 'mean': '827.52', 'min': '-0.02', 'std': '1488.06'}
+Information gain stats:
+ {'max': '170.07', 'mean': '64.25', 'min': '14.28', 'std': '42.39'}
+Episode time 5.61
+Saved _metrics_
+
+=== Episode 7 ===
+Training on [324/972] data points
+> Train epoch 20 [ensemble -10.99 | reward 0.01]
+> Train epoch 40 [ensemble -34.78 | reward 0.00]
+> Train epoch 60 [ensemble -45.59 | reward 0.00]
+> Train epoch 80 [ensemble -52.76 | reward 0.00]
+> Train epoch 100 [ensemble -59.53 | reward 0.00]
+Ensemble loss -59.53 / Reward Loss 0.00
+
+=== Collecting data [7] ===
+Rewards 1.00 / Steps 24.00
+Reward stats:
+ {'max': '5007.47', 'mean': '750.43', 'min': '-0.18', 'std': '1223.84'}
+Information gain stats:
+ {'max': '155.20', 'mean': '60.09', 'min': '8.08', 'std': '38.33'}
+Episode time 5.66
+Saved _metrics_
+
+=== Episode 8 ===
+Training on [348/1044] data points
+> Train epoch 20 [ensemble -8.76 | reward 0.01]
+> Train epoch 40 [ensemble -33.60 | reward 0.01]
+> Train epoch 60 [ensemble -44.82 | reward 0.00]
+> Train epoch 80 [ensemble -52.21 | reward 0.00]
+> Train epoch 100 [ensemble -58.95 | reward 0.00]
+Ensemble loss -58.95 / Reward Loss 0.00
+
+=== Collecting data [8] ===
+Rewards 1.00 / Steps 24.00
+Reward stats:
+ {'max': '3024.49', 'mean': '475.13', 'min': '0.05', 'std': '762.45'}
+Information gain stats:
+ {'max': '143.16', 'mean': '55.16', 'min': '11.22', 'std': '34.47'}
+Episode time 5.65
+Saved _metrics_
+
+=== Episode 9 ===
+Training on [372/1116] data points
+> Train epoch 20 [ensemble -15.16 | reward 0.01]
+> Train epoch 40 [ensemble -38.25 | reward 0.00]
+> Train epoch 60 [ensemble -48.87 | reward 0.00]
+> Train epoch 80 [ensemble -56.22 | reward 0.00]
+> Train epoch 100 [ensemble -63.26 | reward 0.00]
+Ensemble loss -63.26 / Reward Loss 0.00
+
+=== Collecting data [9] ===
+Rewards 1.00 / Steps 24.00
+Reward stats:
+ {'max': '3088.27', 'mean': '502.48', 'min': '-0.05', 'std': '759.97'}
+Information gain stats:
+ {'max': '139.19', 'mean': '55.75', 'min': '10.39', 'std': '33.19'}
+Episode time 5.86
+Saved _metrics_
+
+=== Episode 10 ===
+Training on [396/1188] data points
+> Train epoch 20 [ensemble -15.92 | reward 0.01]
+> Train epoch 40 [ensemble -38.72 | reward 0.01]
+> Train epoch 60 [ensemble -49.31 | reward 0.00]
+> Train epoch 80 [ensemble -56.84 | reward 0.00]
+> Train epoch 100 [ensemble -63.80 | reward 0.00]
+Ensemble loss -63.80 / Reward Loss 0.00
+
+=== Collecting data [10] ===
+Rewards 1.00 / Steps 24.00
+Reward stats:
+ {'max': '1563.57', 'mean': '244.47', 'min': '-0.23', 'std': '377.73'}
+Information gain stats:
+ {'max': '112.67', 'mean': '46.76', 'min': '10.37', 'std': '23.67'}
+Episode time 5.86
+Saved _metrics_
+
+=== Episode 11 ===
+Training on [420/1260] data points
+> Train epoch 20 [ensemble -21.20 | reward 0.01]
+> Train epoch 40 [ensemble -42.63 | reward 0.01]
+> Train epoch 60 [ensemble -53.12 | reward 0.00]
+> Train epoch 80 [ensemble -61.09 | reward 0.00]
+> Train epoch 100 [ensemble -68.54 | reward 0.00]
+Ensemble loss -68.54 / Reward Loss 0.00
+
+=== Collecting data [11] ===
+> Step 25 [reward 0.00]
+Rewards 1.00 / Steps 26.00
+Reward stats:
+ {'max': '802.13', 'mean': '107.85', 'min': '-0.01', 'std': '188.39'}
+Information gain stats:
+ {'max': '92.08', 'mean': '34.29', 'min': '8.17', 'std': '19.57'}
+Episode time 6.44
+Saved _metrics_
+
+=== Episode 12 ===
+Training on [446/1338] data points
+> Train epoch 20 [ensemble -19.19 | reward 0.01]
+> Train epoch 40 [ensemble -41.02 | reward 0.01]
+> Train epoch 60 [ensemble -51.66 | reward 0.00]
+> Train epoch 80 [ensemble -59.74 | reward 0.00]
+> Train epoch 100 [ensemble -67.55 | reward 0.00]
+Ensemble loss -67.55 / Reward Loss 0.00
+
+=== Collecting data [12] ===
+Rewards 1.00 / Steps 24.00
+Reward stats:
+ {'max': '1286.13', 'mean': '209.24', 'min': '-0.31', 'std': '313.89'}
+Information gain stats:
+ {'max': '106.52', 'mean': '41.06', 'min': '10.43', 'std': '23.89'}
+Episode time 6.08
+Saved _metrics_
+
+=== Episode 13 ===
+Training on [470/1410] data points
+> Train epoch 20 [ensemble -23.63 | reward 0.01]
+> Train epoch 40 [ensemble -44.28 | reward 0.00]
+> Train epoch 60 [ensemble -54.68 | reward 0.00]
+> Train epoch 80 [ensemble -63.06 | reward 0.00]
+> Train epoch 100 [ensemble -70.98 | reward 0.00]
+Ensemble loss -70.98 / Reward Loss 0.00
+
+=== Collecting data [13] ===
+> Step 25 [reward 0.00]
+Rewards 1.00 / Steps 34.00
+Reward stats:
+ {'max': '554.09', 'mean': '54.62', 'min': '-0.11', 'std': '114.08'}
+Information gain stats:
+ {'max': '83.77', 'mean': '28.65', 'min': '8.34', 'std': '15.68'}
+Episode time 8.06
+Saved _metrics_
+
+=== Episode 14 ===
+Training on [504/1512] data points
+> Train epoch 20 [ensemble -27.20 | reward 0.01]
+> Train epoch 40 [ensemble -47.18 | reward 0.00]
+> Train epoch 60 [ensemble -58.15 | reward 0.00]
+> Train epoch 80 [ensemble -67.82 | reward 0.00]
+> Train epoch 100 [ensemble -75.96 | reward 0.00]
+Ensemble loss -75.96 / Reward Loss 0.00
+
+=== Collecting data [14] ===
+> Step 25 [reward 0.00]
+> Step 50 [reward 0.00]
+> Step 75 [reward 0.00]
+> Step 100 [reward 0.00]
+> Step 125 [reward 0.00]
+> Step 150 [reward 0.00]
+Rewards 0.00 / Steps 167.00
+Reward stats:
+ {'max': '0.49', 'mean': '-0.14', 'min': '-0.21', 'std': '0.02'}
+Information gain stats:
+ {'max': '32.25', 'mean': '17.20', 'min': '5.09', 'std': '2.70'}
+Episode time 32.06
+Saved _metrics_
+
+=== Episode 15 ===
+Training on [671/2013] data points
+> Train epoch 20 [ensemble -34.38 | reward 0.01]
+> Train epoch 40 [ensemble -55.26 | reward 0.00]
+> Train epoch 60 [ensemble -70.77 | reward 0.00]
+> Train epoch 80 [ensemble -80.67 | reward 0.00]
+> Train epoch 100 [ensemble -87.12 | reward 0.00]
+Ensemble loss -87.12 / Reward Loss 0.00
+
+=== Collecting data [15] ===
+> Step 25 [reward 0.00]
+Rewards 1.00 / Steps 43.00
+Reward stats:
+ {'max': '451.45', 'mean': '20.72', 'min': '-0.18', 'std': '66.04'}
+Information gain stats:
+ {'max': '77.95', 'mean': '24.19', 'min': '6.24', 'std': '12.89'}
+Episode time 10.57
+Saved _metrics_
+
+=== Episode 16 ===
+Training on [714/2142] data points
+> Train epoch 20 [ensemble -36.14 | reward 0.01]
+> Train epoch 40 [ensemble -57.73 | reward 0.00]
+> Train epoch 60 [ensemble -73.25 | reward 0.00]
+> Train epoch 80 [ensemble -82.77 | reward 0.00]
+> Train epoch 100 [ensemble -88.84 | reward 0.00]
+Ensemble loss -88.84 / Reward Loss 0.00
+
+=== Collecting data [16] ===
+> Step 25 [reward 0.00]
+> Step 50 [reward 0.00]
+Rewards 1.00 / Steps 74.00
+Reward stats:
+ {'max': '520.42', 'mean': '28.40', 'min': '-0.18', 'std': '79.12'}
+Information gain stats:
+ {'max': '67.22', 'mean': '20.45', 'min': '6.90', 'std': '8.36'}
+Episode time 16.33
+Saved _metrics_
+
+=== Episode 17 ===
+Training on [788/2364] data points
+> Train epoch 20 [ensemble -38.67 | reward 0.01]
+> Train epoch 40 [ensemble -61.41 | reward 0.00]
+> Train epoch 60 [ensemble -76.67 | reward 0.00]
+> Train epoch 80 [ensemble -85.56 | reward 0.00]
+> Train epoch 100 [ensemble -91.18 | reward 0.00]
+Ensemble loss -91.18 / Reward Loss 0.00
+
+=== Collecting data [17] ===
+> Step 25 [reward 0.00]
+> Step 50 [reward 1.00]
+Rewards 1.00 / Steps 50.00
+Reward stats:
+ {'max': '426.15', 'mean': '30.40', 'min': '-0.12', 'std': '74.08'}
+Information gain stats:
+ {'max': '80.67', 'mean': '23.17', 'min': '6.13', 'std': '12.72'}
+Episode time 12.32
+Saved _metrics_
+
+=== Episode 18 ===
+Training on [838/2514] data points
+> Train epoch 20 [ensemble -41.65 | reward 0.00]
+> Train epoch 40 [ensemble -65.35 | reward 0.00]
+> Train epoch 60 [ensemble -79.99 | reward 0.00]
+> Train epoch 80 [ensemble -88.23 | reward 0.00]
+> Train epoch 100 [ensemble -93.40 | reward 0.00]
+Ensemble loss -93.40 / Reward Loss 0.00
+
+=== Collecting data [18] ===
+> Step 25 [reward 0.00]
+Rewards 1.00 / Steps 36.00
+Reward stats:
+ {'max': '464.80', 'mean': '49.02', 'min': '-0.15', 'std': '96.53'}
+Information gain stats:
+ {'max': '70.54', 'mean': '24.59', 'min': '5.10', 'std': '11.92'}
+Episode time 10.02
+Saved _metrics_
+
+=== Episode 19 ===
+Training on [874/2622] data points
+> Train epoch 20 [ensemble -43.89 | reward 0.00]
+> Train epoch 40 [ensemble -68.01 | reward 0.00]
+> Train epoch 60 [ensemble -82.11 | reward 0.00]
+> Train epoch 80 [ensemble -89.90 | reward 0.00]
+> Train epoch 100 [ensemble -94.78 | reward 0.00]
+Ensemble loss -94.78 / Reward Loss 0.00
+
+=== Collecting data [19] ===
+> Step 25 [reward 0.00]
+> Step 50 [reward 0.00]
+> Step 75 [reward 0.00]
+> Step 100 [reward 0.00]
+> Step 125 [reward 0.00]
+> Step 150 [reward 0.00]
+Rewards 0.00 / Steps 167.00
+Reward stats:
+ {'max': '1.93', 'mean': '0.05', 'min': '-0.20', 'std': '0.04'}
+Information gain stats:
+ {'max': '29.88', 'mean': '17.19', 'min': '5.42', 'std': '2.65'}
+Episode time 33.60
+Saved _metrics_
+
+=== Episode 20 ===
+Training on [1041/3123] data points
+> Train epoch 20 [ensemble -49.36 | reward 0.00]
+> Train epoch 40 [ensemble -75.69 | reward 0.00]
+> Train epoch 60 [ensemble -87.90 | reward 0.00]
+> Train epoch 80 [ensemble -94.46 | reward 0.00]
+> Train epoch 100 [ensemble -98.54 | reward 0.00]
+Ensemble loss -98.54 / Reward Loss 0.00
+
+=== Collecting data [20] ===
+> Step 25 [reward 0.00]
+Rewards 1.00 / Steps 38.00
+Reward stats:
+ {'max': '332.44', 'mean': '31.89', 'min': '-0.14', 'std': '63.86'}
+Information gain stats:
+ {'max': '72.00', 'mean': '21.69', 'min': '6.04', 'std': '8.83'}
+Episode time 11.21
+Saved _metrics_
+
+=== Episode 21 ===
+Training on [1079/3237] data points
+> Train epoch 20 [ensemble -50.20 | reward 0.00]
+> Train epoch 40 [ensemble -76.20 | reward 0.00]
+> Train epoch 60 [ensemble -88.24 | reward 0.00]
+> Train epoch 80 [ensemble -94.76 | reward 0.00]
+> Train epoch 100 [ensemble -98.81 | reward 0.00]
+Ensemble loss -98.81 / Reward Loss 0.00
+
+=== Collecting data [21] ===
+> Step 25 [reward 0.00]
+> Step 50 [reward 0.00]
+Rewards 1.00 / Steps 55.00
+Reward stats:
+ {'max': '364.54', 'mean': '25.59', 'min': '-0.13', 'std': '63.15'}
+Information gain stats:
+ {'max': '67.35', 'mean': '23.34', 'min': '6.68', 'std': '10.19'}
+Episode time 14.46
+Saved _metrics_
+
+=== Episode 22 ===
+Training on [1134/3402] data points
+> Train epoch 20 [ensemble -50.82 | reward 0.00]
+> Train epoch 40 [ensemble -76.60 | reward 0.00]
+> Train epoch 60 [ensemble -88.13 | reward 0.00]
+> Train epoch 80 [ensemble -94.39 | reward 0.00]
+> Train epoch 100 [ensemble -98.33 | reward 0.00]
+Ensemble loss -98.33 / Reward Loss 0.00
+
+=== Collecting data [22] ===
+> Step 25 [reward 1.00]
+Rewards 1.00 / Steps 25.00
+Reward stats:
+ {'max': '227.09', 'mean': '28.95', 'min': '-0.18', 'std': '47.51'}
+Information gain stats:
+ {'max': '71.98', 'mean': '28.79', 'min': '8.18', 'std': '12.79'}
+Episode time 9.34
+Saved _metrics_
+
+=== Episode 23 ===
+Training on [1159/3477] data points
+> Train epoch 20 [ensemble -53.56 | reward 0.00]
+> Train epoch 40 [ensemble -79.03 | reward 0.00]
+> Train epoch 60 [ensemble -90.00 | reward 0.00]
+> Train epoch 80 [ensemble -95.90 | reward 0.00]
+> Train epoch 100 [ensemble -99.60 | reward 0.00]
+Ensemble loss -99.60 / Reward Loss 0.00
+
+=== Collecting data [23] ===
+Rewards 1.00 / Steps 24.00
+Reward stats:
+ {'max': '67.85', 'mean': '5.54', 'min': '-0.09', 'std': '11.64'}
+Information gain stats:
+ {'max': '72.42', 'mean': '29.70', 'min': '8.30', 'std': '13.32'}
+Episode time 9.44
+Saved _metrics_
+
+=== Episode 24 ===
+Training on [1183/3549] data points
+> Train epoch 20 [ensemble -52.43 | reward 0.00]
+> Train epoch 40 [ensemble -78.33 | reward 0.00]
+> Train epoch 60 [ensemble -89.56 | reward 0.00]
+> Train epoch 80 [ensemble -95.54 | reward 0.00]
+> Train epoch 100 [ensemble -99.30 | reward 0.00]
+Ensemble loss -99.30 / Reward Loss 0.00
+
+=== Collecting data [24] ===
+> Step 25 [reward 0.00]
+> Step 50 [reward 0.00]
+Rewards 1.00 / Steps 53.00
+Reward stats:
+ {'max': '280.77', 'mean': '19.90', 'min': '-0.19', 'std': '49.74'}
+Information gain stats:
+ {'max': '85.37', 'mean': '30.61', 'min': '6.92', 'std': '18.04'}
+Episode time 14.66
+Saved _metrics_
+
+=== Episode 25 ===
+Training on [1236/3708] data points
+> Train epoch 20 [ensemble -52.87 | reward 0.00]
+> Train epoch 40 [ensemble -79.29 | reward 0.00]
+> Train epoch 60 [ensemble -90.29 | reward 0.00]
+> Train epoch 80 [ensemble -96.23 | reward 0.00]
+> Train epoch 100 [ensemble -100.02 | reward 0.00]
+Ensemble loss -100.02 / Reward Loss 0.00
+
+=== Collecting data [25] ===
+> Step 25 [reward 0.00]
+> Step 50 [reward 0.00]
+> Step 75 [reward 0.00]
+Rewards 1.00 / Steps 78.00
+Reward stats:
+ {'max': '499.78', 'mean': '25.44', 'min': '0.01', 'std': '77.10'}
+Information gain stats:
+ {'max': '111.27', 'mean': '28.16', 'min': '5.55', 'std': '20.27'}
+Episode time 19.23
+Saved _metrics_
+
+=== Episode 26 ===
+Training on [1314/3942] data points
+> Train epoch 20 [ensemble -57.89 | reward 0.00]
+> Train epoch 40 [ensemble -82.38 | reward 0.00]
+> Train epoch 60 [ensemble -92.26 | reward 0.00]
+> Train epoch 80 [ensemble -97.72 | reward 0.00]
+> Train epoch 100 [ensemble -101.34 | reward 0.00]
+Ensemble loss -101.34 / Reward Loss 0.00
+
+=== Collecting data [26] ===
+> Step 25 [reward 0.00]
+> Step 50 [reward 0.00]
+Rewards 1.00 / Steps 55.00
+Reward stats:
+ {'max': '92.25', 'mean': '0.14', 'min': '-25.04', 'std': '7.69'}
+Information gain stats:
+ {'max': '104.69', 'mean': '29.25', 'min': '6.46', 'std': '17.33'}
+Episode time 15.58
+Saved _metrics_
+
+=== Episode 27 ===
+Training on [1369/4107] data points
+> Train epoch 20 [ensemble -59.98 | reward 0.00]
+> Train epoch 40 [ensemble -83.79 | reward 0.00]
+> Train epoch 60 [ensemble -93.19 | reward 0.00]
+> Train epoch 80 [ensemble -98.36 | reward 0.00]
+> Train epoch 100 [ensemble -101.83 | reward 0.00]
+Ensemble loss -101.83 / Reward Loss 0.00
+
+=== Collecting data [27] ===
+> Step 25 [reward 0.00]
+Rewards 1.00 / Steps 27.00
+Reward stats:
+ {'max': '374.83', 'mean': '49.05', 'min': '-0.33', 'std': '80.60'}
+Information gain stats:
+ {'max': '103.05', 'mean': '38.66', 'min': '8.06', 'std': '20.31'}
+Episode time 10.84
+Saved _metrics_
+
+=== Episode 28 ===
+Training on [1396/4188] data points
+> Train epoch 20 [ensemble -58.98 | reward 0.00]
+> Train epoch 40 [ensemble -83.16 | reward 0.00]
+> Train epoch 60 [ensemble -92.68 | reward 0.00]
+> Train epoch 80 [ensemble -97.90 | reward 0.00]
+> Train epoch 100 [ensemble -101.37 | reward 0.00]
+Ensemble loss -101.37 / Reward Loss 0.00
+
+=== Collecting data [28] ===
+> Step 25 [reward 0.00]
+> Step 50 [reward 0.00]
+Rewards 1.00 / Steps 56.00
+Reward stats:
+ {'max': '58.04', 'mean': '1.38', 'min': '-21.12', 'std': '5.90'}
+Information gain stats:
+ {'max': '112.45', 'mean': '29.43', 'min': '5.59', 'std': '19.80'}
+Episode time 16.03
+Saved _metrics_
+
+=== Episode 29 ===
+Training on [1452/4356] data points
+> Train epoch 20 [ensemble -62.36 | reward 0.00]
+> Train epoch 40 [ensemble -85.06 | reward 0.00]
+> Train epoch 60 [ensemble -94.00 | reward 0.00]
+> Train epoch 80 [ensemble -99.06 | reward 0.00]
+> Train epoch 100 [ensemble -102.40 | reward 0.00]
+Ensemble loss -102.40 / Reward Loss 0.00
+
+=== Collecting data [29] ===
+> Step 25 [reward 0.00]
+Rewards 1.00 / Steps 45.00
+Reward stats:
+ {'max': '53.23', 'mean': '1.88', 'min': '-0.27', 'std': '5.46'}
+Information gain stats:
+ {'max': '83.12', 'mean': '25.15', 'min': '6.53', 'std': '15.86'}
+Episode time 14.47
+Saved _metrics_
+
+=== Episode 30 ===
+Training on [1497/4491] data points
+> Train epoch 20 [ensemble -62.76 | reward 0.00]
+> Train epoch 40 [ensemble -85.15 | reward 0.00]
+> Train epoch 60 [ensemble -94.05 | reward 0.00]
+> Train epoch 80 [ensemble -99.05 | reward 0.00]
+> Train epoch 100 [ensemble -102.38 | reward 0.00]
+Ensemble loss -102.38 / Reward Loss 0.00
+
+=== Collecting data [30] ===
+> Step 25 [reward 0.00]
+> Step 50 [reward 0.00]
+Rewards 1.00 / Steps 52.00
+Reward stats:
+ {'max': '758.91', 'mean': '38.84', 'min': '-1.23', 'std': '111.24'}
+Information gain stats:
+ {'max': '123.30', 'mean': '29.26', 'min': '5.57', 'std': '22.69'}
+Episode time 15.65
+Saved _metrics_
+
+=== Episode 31 ===
+Training on [1549/4647] data points
+> Train epoch 20 [ensemble -63.78 | reward 0.00]
+> Train epoch 40 [ensemble -85.87 | reward 0.00]
+> Train epoch 60 [ensemble -94.53 | reward 0.00]
+> Train epoch 80 [ensemble -99.42 | reward 0.00]
+> Train epoch 100 [ensemble -102.67 | reward 0.00]
+Ensemble loss -102.67 / Reward Loss 0.00
+
+=== Collecting data [31] ===
+> Step 25 [reward 0.00]
+Rewards 1.00 / Steps 37.00
+Reward stats:
+ {'max': '1.19', 'mean': '-3.45', 'min': '-175.00', 'std': '10.82'}
+Information gain stats:
+ {'max': '89.88', 'mean': '37.71', 'min': '6.32', 'std': '19.62'}
+Episode time 13.28
+Saved _metrics_
+
+=== Episode 32 ===
+Training on [1586/4758] data points
+> Train epoch 20 [ensemble -64.58 | reward 0.00]
+> Train epoch 40 [ensemble -86.29 | reward 0.00]
+> Train epoch 60 [ensemble -94.83 | reward 0.00]
+> Train epoch 80 [ensemble -99.62 | reward 0.00]
+> Train epoch 100 [ensemble -102.88 | reward 0.00]
+Ensemble loss -102.88 / Reward Loss 0.00
+
+=== Collecting data [32] ===
+> Step 25 [reward 0.00]
+> Step 50 [reward 0.00]
+> Step 75 [reward 0.00]
+Rewards 1.00 / Steps 87.00
+Reward stats:
+ {'max': '1233.69', 'mean': '45.79', 'min': '-0.97', 'std': '161.17'}
+Information gain stats:
+ {'max': '156.35', 'mean': '29.01', 'min': '6.07', 'std': '27.29'}
+Episode time 22.37
+Saved _metrics_
+
+=== Episode 33 ===
+Training on [1673/5019] data points
+> Train epoch 20 [ensemble -67.11 | reward 0.00]
+> Train epoch 40 [ensemble -87.69 | reward 0.00]
+> Train epoch 60 [ensemble -95.83 | reward 0.00]
+> Train epoch 80 [ensemble -100.48 | reward 0.00]
+> Train epoch 100 [ensemble -103.60 | reward 0.00]
+Ensemble loss -103.60 / Reward Loss 0.00
+
+=== Collecting data [33] ===
+> Step 25 [reward 0.00]
+> Step 50 [reward 0.00]
+Rewards 1.00 / Steps 54.00
+Reward stats:
+ {'max': '490.27', 'mean': '15.97', 'min': '-0.89', 'std': '55.93'}
+Information gain stats:
+ {'max': '90.93', 'mean': '24.23', 'min': '5.71', 'std': '15.34'}
+Episode time 16.93
+Saved _metrics_
+
+=== Episode 34 ===
+Training on [1727/5181] data points
+> Train epoch 20 [ensemble -67.44 | reward 0.00]
+> Train epoch 40 [ensemble -87.61 | reward 0.00]
+> Train epoch 60 [ensemble -95.70 | reward 0.00]
+> Train epoch 80 [ensemble -100.39 | reward 0.00]
+> Train epoch 100 [ensemble -103.51 | reward 0.00]
+Ensemble loss -103.51 / Reward Loss 0.00
+
+=== Collecting data [34] ===
+> Step 25 [reward 0.00]
+> Step 50 [reward 0.00]
+> Step 75 [reward 0.00]
+> Step 100 [reward 0.00]
+> Step 125 [reward 0.00]
+> Step 150 [reward 0.00]
+Rewards 0.00 / Steps 167.00
+Reward stats:
+ {'max': '36.66', 'mean': '0.08', 'min': '-0.63', 'std': '1.56'}
+Information gain stats:
+ {'max': '52.09', 'mean': '17.10', 'min': '4.62', 'std': '3.74'}
+Episode time 37.32
+Saved _metrics_
+
+=== Episode 35 ===
+Training on [1894/5682] data points
+> Train epoch 20 [ensemble -71.95 | reward 0.00]
+> Train epoch 40 [ensemble -90.47 | reward 0.00]
+> Train epoch 60 [ensemble -97.89 | reward 0.00]
+> Train epoch 80 [ensemble -102.19 | reward 0.00]
+> Train epoch 100 [ensemble -105.07 | reward 0.00]
+Ensemble loss -105.07 / Reward Loss 0.00
+
+=== Collecting data [35] ===
+> Step 25 [reward 0.00]
+> Step 50 [reward 0.00]
+Rewards 1.00 / Steps 67.00
+Reward stats:
+ {'max': '1025.51', 'mean': '34.40', 'min': '-0.42', 'std': '107.64'}
+Information gain stats:
+ {'max': '145.35', 'mean': '31.76', 'min': '5.90', 'std': '25.06'}
+Episode time 20.22
+Saved _metrics_
+
+=== Episode 36 ===
+Training on [1961/5883] data points
+> Train epoch 20 [ensemble -75.61 | reward 0.00]
+> Train epoch 40 [ensemble -92.78 | reward 0.00]
+> Train epoch 60 [ensemble -99.66 | reward 0.00]
+> Train epoch 80 [ensemble -103.61 | reward 0.00]
+> Train epoch 100 [ensemble -106.11 | reward 0.00]
+Ensemble loss -106.11 / Reward Loss 0.00
+
+=== Collecting data [36] ===
+> Step 25 [reward 0.00]
+> Step 50 [reward 0.00]
+> Step 75 [reward 0.00]
+> Step 100 [reward 0.00]
+Rewards 1.00 / Steps 117.00
+Reward stats:
+ {'max': '286.69', 'mean': '8.25', 'min': '-0.03', 'std': '31.74'}
+Information gain stats:
+ {'max': '114.29', 'mean': '24.85', 'min': '3.47', 'std': '16.24'}
+Episode time 29.54
+Saved _metrics_
+
+=== Episode 37 ===
+Training on [2078/6234] data points
+> Train epoch 20 [ensemble -75.58 | reward 0.00]
+> Train epoch 40 [ensemble -92.69 | reward 0.00]
+> Train epoch 60 [ensemble -99.69 | reward 0.00]
+> Train epoch 80 [ensemble -103.67 | reward 0.00]
+> Train epoch 100 [ensemble -106.28 | reward 0.00]
+Ensemble loss -106.28 / Reward Loss 0.00
+
+=== Collecting data [37] ===
+> Step 25 [reward 0.00]
+Rewards 1.00 / Steps 49.00
+Reward stats:
+ {'max': '1202.45', 'mean': '35.66', 'min': '-0.45', 'std': '99.74'}
+Information gain stats:
+ {'max': '121.08', 'mean': '30.98', 'min': '5.64', 'std': '19.15'}
+Episode time 17.84
+Saved _metrics_
+
+=== Episode 38 ===
+Training on [2127/6381] data points
+> Train epoch 20 [ensemble -77.24 | reward 0.00]
+> Train epoch 40 [ensemble -93.64 | reward 0.00]
+> Train epoch 60 [ensemble -100.45 | reward 0.00]
+> Train epoch 80 [ensemble -104.33 | reward 0.00]
+> Train epoch 100 [ensemble -106.93 | reward 0.00]
+Ensemble loss -106.93 / Reward Loss 0.00
+
+=== Collecting data [38] ===
+> Step 25 [reward 0.00]
+Rewards 1.00 / Steps 49.00
+Reward stats:
+ {'max': '421.37', 'mean': '12.63', 'min': '-0.04', 'std': '39.86'}
+Information gain stats:
+ {'max': '92.27', 'mean': '29.68', 'min': '6.65', 'std': '15.99'}
+Episode time 18.18
+Saved _metrics_
+
+=== Episode 39 ===
+Training on [2176/6528] data points
+> Train epoch 20 [ensemble -76.70 | reward 0.00]
+> Train epoch 40 [ensemble -93.53 | reward 0.00]
+> Train epoch 60 [ensemble -100.50 | reward 0.00]
+> Train epoch 80 [ensemble -104.49 | reward 0.00]
+> Train epoch 100 [ensemble -107.09 | reward 0.00]
+Ensemble loss -107.09 / Reward Loss 0.00
+
+=== Collecting data [39] ===
+> Step 25 [reward 0.00]
+> Step 50 [reward 0.00]
+Rewards 1.00 / Steps 61.00
+Reward stats:
+ {'max': '41.17', 'mean': '1.61', 'min': '-0.02', 'std': '4.17'}
+Information gain stats:
+ {'max': '85.90', 'mean': '28.02', 'min': '3.53', 'std': '16.28'}
+Episode time 20.44
+Saved _metrics_
+
+=== Episode 40 ===
+Training on [2237/6711] data points
+> Train epoch 20 [ensemble -79.02 | reward 0.00]
+> Train epoch 40 [ensemble -95.15 | reward 0.00]
+> Train epoch 60 [ensemble -101.60 | reward 0.00]
+> Train epoch 80 [ensemble -105.39 | reward 0.00]
+> Train epoch 100 [ensemble -107.83 | reward 0.00]
+Ensemble loss -107.83 / Reward Loss 0.00
+
+=== Collecting data [40] ===
+> Step 25 [reward 0.00]
+> Step 50 [reward 0.00]
+Rewards 1.00 / Steps 51.00
+Reward stats:
+ {'max': '5242.49', 'mean': '126.30', 'min': '-0.06', 'std': '445.78'}
+Information gain stats:
+ {'max': '128.83', 'mean': '32.23', 'min': '6.01', 'std': '23.02'}
+Episode time 18.91
+Saved _metrics_
+
+=== Episode 41 ===
+Training on [2288/6864] data points
+> Train epoch 20 [ensemble -78.74 | reward 0.00]
+> Train epoch 40 [ensemble -95.01 | reward 0.00]
+> Train epoch 60 [ensemble -101.66 | reward 0.00]
+> Train epoch 80 [ensemble -105.36 | reward 0.00]
+> Train epoch 100 [ensemble -107.78 | reward 0.00]
+Ensemble loss -107.78 / Reward Loss 0.00
+
+=== Collecting data [41] ===
+> Step 25 [reward 0.00]
+> Step 50 [reward 0.00]
+> Step 75 [reward 0.00]
+> Step 100 [reward 0.00]
+> Step 125 [reward 0.00]
+> Step 150 [reward 0.00]
+Rewards 0.00 / Steps 167.00
+Reward stats:
+ {'max': '0.51', 'mean': '0.11', 'min': '-0.15', 'std': '0.01'}
+Information gain stats:
+ {'max': '27.95', 'mean': '16.31', 'min': '4.14', 'std': '2.59'}
+Episode time 39.78
+Saved _metrics_
+
+=== Episode 42 ===
+Training on [2455/7365] data points
+> Train epoch 20 [ensemble -82.50 | reward 0.00]
+> Train epoch 40 [ensemble -97.05 | reward 0.00]
+> Train epoch 60 [ensemble -103.14 | reward 0.00]
+> Train epoch 80 [ensemble -106.61 | reward 0.00]
+> Train epoch 100 [ensemble -108.82 | reward 0.00]
+Ensemble loss -108.82 / Reward Loss 0.00
+
+=== Collecting data [42] ===
+> Step 25 [reward 0.00]
+> Step 50 [reward 0.00]
+> Step 75 [reward 0.00]
+> Step 100 [reward 0.00]
+> Step 125 [reward 0.00]
+> Step 150 [reward 0.00]
+Rewards 0.00 / Steps 167.00
+Reward stats:
+ {'max': '0.70', 'mean': '0.09', 'min': '0.04', 'std': '0.02'}
+Information gain stats:
+ {'max': '31.24', 'mean': '16.28', 'min': '4.63', 'std': '2.59'}
+Episode time 40.61
+Saved _metrics_
+
+=== Episode 43 ===
+Training on [2622/7866] data points
+> Train epoch 20 [ensemble -84.81 | reward 0.00]
+> Train epoch 40 [ensemble -98.57 | reward 0.00]
+> Train epoch 60 [ensemble -104.30 | reward 0.00]
+> Train epoch 80 [ensemble -107.56 | reward 0.00]
+> Train epoch 100 [ensemble -109.69 | reward 0.00]
+Ensemble loss -109.69 / Reward Loss 0.00
+
+=== Collecting data [43] ===
+> Step 25 [reward 0.00]
+> Step 50 [reward 0.00]
+> Step 75 [reward 0.00]
+> Step 100 [reward 0.00]
+Rewards 1.00 / Steps 118.00
+Reward stats:
+ {'max': '957.26', 'mean': '4.23', 'min': '-0.11', 'std': '26.45'}
+Information gain stats:
+ {'max': '91.68', 'mean': '21.36', 'min': '3.83', 'std': '11.36'}
+Episode time 32.58
+Saved _metrics_
+
+=== Episode 44 ===
+Training on [2740/8220] data points
+> Train epoch 20 [ensemble -85.33 | reward 0.00]
+> Train epoch 40 [ensemble -98.88 | reward 0.00]
+> Train epoch 60 [ensemble -104.49 | reward 0.00]
+> Train epoch 80 [ensemble -107.69 | reward 0.00]
+> Train epoch 100 [ensemble -109.76 | reward 0.00]
+Ensemble loss -109.76 / Reward Loss 0.00
+
+=== Collecting data [44] ===
+> Step 25 [reward 0.00]
+> Step 50 [reward 0.00]
+Rewards 1.00 / Steps 73.00
+Reward stats:
+ {'max': '32.19', 'mean': '1.24', 'min': '-0.00', 'std': '3.62'}
+Information gain stats:
+ {'max': '88.61', 'mean': '22.24', 'min': '3.66', 'std': '13.70'}
+Episode time 25.06
+Saved _metrics_
+
+=== Episode 45 ===
+Training on [2813/8439] data points
+> Train epoch 20 [ensemble -87.00 | reward 0.00]
+> Train epoch 40 [ensemble -99.90 | reward 0.00]
+> Train epoch 60 [ensemble -105.30 | reward 0.00]
+> Train epoch 80 [ensemble -108.25 | reward 0.00]
+> Train epoch 100 [ensemble -110.29 | reward 0.00]
+Ensemble loss -110.29 / Reward Loss 0.00
+
+=== Collecting data [45] ===
+> Step 25 [reward 0.00]
+Rewards 1.00 / Steps 47.00
+Reward stats:
+ {'max': '707.38', 'mean': '6.76', 'min': '-0.21', 'std': '24.30'}
+Information gain stats:
+ {'max': '77.89', 'mean': '27.77', 'min': '2.29', 'std': '14.18'}
+Episode time 20.95
+Saved _metrics_
+
+=== Episode 46 ===
+Training on [2860/8580] data points
+> Train epoch 20 [ensemble -86.80 | reward 0.00]
+> Train epoch 40 [ensemble -99.88 | reward 0.00]
+> Train epoch 60 [ensemble -105.26 | reward 0.00]
+> Train epoch 80 [ensemble -108.30 | reward 0.00]
+> Train epoch 100 [ensemble -110.25 | reward 0.00]
+Ensemble loss -110.25 / Reward Loss 0.00
+
+=== Collecting data [46] ===
+> Step 25 [reward 0.00]
+> Step 50 [reward 0.00]
+> Step 75 [reward 0.00]
+> Step 100 [reward 0.00]
+> Step 125 [reward 0.00]
+> Step 150 [reward 0.00]
+Rewards 0.00 / Steps 167.00
+Reward stats:
+ {'max': '1.28', 'mean': '0.04', 'min': '0.02', 'std': '0.01'}
+Information gain stats:
+ {'max': '33.91', 'mean': '16.16', 'min': '4.88', 'std': '2.60'}
+Episode time 42.43
+Saved _metrics_
+
+=== Episode 47 ===
+Training on [3027/9081] data points
+> Train epoch 20 [ensemble -88.26 | reward 0.00]
+> Train epoch 40 [ensemble -100.64 | reward 0.00]
+> Train epoch 60 [ensemble -105.84 | reward 0.00]
+> Train epoch 80 [ensemble -108.82 | reward 0.00]
+> Train epoch 100 [ensemble -110.79 | reward 0.00]
+Ensemble loss -110.79 / Reward Loss 0.00
+
+=== Collecting data [47] ===
+> Step 25 [reward 0.00]
+Rewards 1.00 / Steps 45.00
+Reward stats:
+ {'max': '3576.72', 'mean': '72.35', 'min': '-0.01', 'std': '232.58'}
+Information gain stats:
+ {'max': '99.36', 'mean': '29.05', 'min': '4.55', 'std': '15.15'}
+Episode time 21.42
+Saved _metrics_
+
+=== Episode 48 ===
+Training on [3072/9216] data points
+> Train epoch 20 [ensemble -88.24 | reward 0.00]
+> Train epoch 40 [ensemble -100.85 | reward 0.00]
+> Train epoch 60 [ensemble -106.09 | reward 0.00]
+> Train epoch 80 [ensemble -109.05 | reward 0.00]
+> Train epoch 100 [ensemble -110.98 | reward 0.00]
+Ensemble loss -110.98 / Reward Loss 0.00
+
+=== Collecting data [48] ===
+> Step 25 [reward 0.00]
+> Step 50 [reward 0.00]
+> Step 75 [reward 0.00]
+> Step 100 [reward 0.00]
+> Step 125 [reward 0.00]
+> Step 150 [reward 0.00]
+Rewards 0.00 / Steps 167.00
+Reward stats:
+ {'max': '5.32', 'mean': '0.02', 'min': '-0.00', 'std': '0.01'}
+Information gain stats:
+ {'max': '29.27', 'mean': '16.19', 'min': '4.45', 'std': '2.58'}
+Episode time 43.26
+Saved _metrics_
+
+=== Episode 49 ===
+Training on [3239/9717] data points
+> Train epoch 20 [ensemble -90.71 | reward 0.00]
+> Train epoch 40 [ensemble -102.34 | reward 0.00]
+> Train epoch 60 [ensemble -107.16 | reward 0.00]
+> Train epoch 80 [ensemble -109.89 | reward 0.00]
+> Train epoch 100 [ensemble -111.67 | reward 0.00]
+Ensemble loss -111.67 / Reward Loss 0.00
+
+=== Collecting data [49] ===
+> Step 25 [reward 0.00]
+> Step 50 [reward 0.00]
+> Step 75 [reward 0.00]
+> Step 100 [reward 0.00]
+> Step 125 [reward 0.00]
+> Step 150 [reward 0.00]
+Rewards 0.00 / Steps 167.00
+Reward stats:
+ {'max': '0.20', 'mean': '0.01', 'min': '-0.01', 'std': '0.00'}
+Information gain stats:
+ {'max': '29.58', 'mean': '16.29', 'min': '5.32', 'std': '2.59'}
+Episode time 44.00
+Saved _metrics_
