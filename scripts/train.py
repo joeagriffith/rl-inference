@@ -121,11 +121,13 @@ def main(args):
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--logdir", type=str, default="log")
-    parser.add_argument("--config_name", type=str, default="mountain_car")
-    parser.add_argument("--strategy", type=str, default="information")
-    parser.add_argument("--seed", type=int, default=0)
-    args = parser.parse_args()
-    config = get_config(args)
-    main(config)
+    for i in range(1, 10):
+        parser = argparse.ArgumentParser()
+        parser.add_argument("--logdir", type=str, default="log")
+        parser.add_argument("--config_name", type=str, default="mountain_car")
+        parser.add_argument("--strategy", type=str, default="information")
+        parser.add_argument("--seed", type=int, default=0)
+        args = parser.parse_args()
+        args.seed = i
+        config = get_config(args)
+        main(config)
