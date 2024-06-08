@@ -156,16 +156,16 @@ class RewardModel(nn.Module):
         self.reset_parameters()
         self.to(device)
 
-    def forward(self, states):
-        inp = states
+    def forward(self, states, actions):
+        inp = torch.cat((states, actions), dim=1)
         reward = self.act_fn(self.fc_1(inp))
         reward = self.act_fn(self.fc_2(reward))
         reward = self.fc_3(reward).squeeze(dim=1)
         return reward
 
-    def loss(self, target_model, states, next_states, rewards, dones):
-        targets = rewards + self.gamma * target_model(next_states) * (1 - dones)
-        r_hat = self(states)
+    def loss(self, states, actions, rewards, dones, next_q):
+        targets = rewards + self.gamma * (1 - dones) * next_q
+        r_hat = self(states, actions)
         return F.mse_loss(r_hat, targets)
 
     def reset_parameters(self):
